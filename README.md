@@ -10,7 +10,7 @@ Rancher v2 CLI with kubectl
 
 If you have done a `rancher login` on the host, you can map the `.rancher` folder into the container to share credentials.
 
-`docker run -rm -it -v ~/.rancher:/root/.rancher sra/rancher-cli-k8s rancher kubectl get nodes`
+`docker run -rm -it -v ~/.rancher:/root/.rancher mheiniger/rancher-cli-k8s:latest rancher kubectl get nodes`
 
 Otherwise, you'll need to login using an API token from your rancher gui. In a build scenario You could create a new API key from your account in the rancher2 GUI and then expose it via environment variable and then:
 
