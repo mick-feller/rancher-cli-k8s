@@ -1,9 +1,11 @@
 # rancher-cli-k8s
 Rancher v2 CLI with kubectl
 
-Just needed a version of the rancher v2 cli with kubectl installed also
+## Supported tags and respective Dockerfile links
+* `v2.0.2`, `latest` ([v2.0.2/Dockerfile](https://github.com/mheiniger/rancher-cli-k8s/blob/v2.0.2/Dockerfile))
 
-Examples:
+
+## Examples:
 
 If you have done a `rancher login` on the host, you can map the `.rancher` folder into the container to share credentials.
 
@@ -16,3 +18,4 @@ rancher login "$RANCHER_SERVER_URL" -t "$RANCHER_API_TOKEN"
 rancher kubectl get nodes
 ...
 ```
+
